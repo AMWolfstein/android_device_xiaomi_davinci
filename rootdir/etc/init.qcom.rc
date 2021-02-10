@@ -337,7 +337,6 @@ on early-boot
     write /sys/kernel/boot_adsp/boot 1
     write /sys/kernel/boot_cdsp/boot 1
     write /sys/devices/virtual/npu/msm_npu/boot 1
-    write /sys/devices/virtual/cvp/cvp/boot 1
 
     chown system system /mnt/vendor/persist/data/pfm/licenses
     chmod 0775 /mnt/vendor/persist/data/pfm/licenses
@@ -572,6 +571,7 @@ on property:sys.boot_completed=1
     chown media audio /sys/kernel/wcd_cpe0/fw_name
     # Reinit lmkd to reconfigure lmkd properties
     setprop lmkd.reinit 1
+    write /sys/devices/virtual/cvp/cvp/boot 1
 
     # Enable ZRAM on boot_complete
     rm /data/unencrypted/zram_swap
