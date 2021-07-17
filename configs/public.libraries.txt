@@ -6,6 +6,9 @@ libcdsprpc.so
 libHalSuperSensorServer.so
 libOpenCL.so
 libsdsprpc.so
+libnpu.so
+libhta_hexagon_runtime.so
+unnhal-acc-hta.so
 libSuperSensorCPU.so
 libSuperSensor.so
 libVDClearShot.so
