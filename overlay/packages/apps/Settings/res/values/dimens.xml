@@ -16,4 +16,7 @@
 
 <resources>
     <item name="fingerprint_sensor_location_fraction_y" type="fraction">82.52%</item>
+
+    <!-- Whether to show the Preference for Adaptive connectivity -->
+    <bool name="config_show_adaptive_connectivity">false</bool>
 </resources>
