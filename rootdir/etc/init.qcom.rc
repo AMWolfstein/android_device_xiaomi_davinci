@@ -675,6 +675,12 @@ on property:vendor.media.target_variant=*
 on property:vold.decrypt=trigger_restart_framework
     start wcnss-service
 
+service adsprpcd /vendor/bin/adsprpcd
+   class main
+   user media
+   group media
+   disabled
+
 service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
     class core
     user vendor_qrtr
