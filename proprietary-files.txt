@@ -310,6 +310,11 @@ vendor/lib64/libcamxstatscore.so
 vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 
+# Camera face detection - from davinci V12.5.2.0.RFJCNXM
+vendor/etc/camera/megviifacepp_0_5_2_model:vendor/etc/camera/facedetectpp_0_5_2_model
+vendor/lib64/libmegface.so:vendor/lib64/libfacedet.so
+vendor/lib64/libMegviiFacepp-0.5.2.so:vendor/lib64/libFaceDetectpp-0.5.2.so
+
 # Camera Visidon - from davinci V12.5.2.0.RFJCNXM
 vendor/lib64/camera/components/com.visidon.node.clearshot.so
 vendor/lib64/camera/components/com.visidon.node.sr.so
