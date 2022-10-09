@@ -1,4 +1,4 @@
-# These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V13.0.8.0.SKFMIXM, unless pinned
+# These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V13.0.12.0.SKFMIXM, unless pinned
 
 # ADSP
 -vendor/bin/adsprpcd
@@ -42,6 +42,8 @@ vendor/lib/rfsa/adsp/dirac_resource.dar
 vendor/lib/rfsa/adsp/misound_karaoke_res.bin
 vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
+vendor/lib/rfsa/adsp/misound_res_headphone.bin
+vendor/lib/rfsa/adsp/misound_res_spk.bin
 
 # Audio ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
@@ -88,6 +90,7 @@ system_ext/framework/audiosphere.jar
 # Bluetooth
 -vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 -vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 -vendor/lib/libbluetooth_audio_session_qti.so
 -vendor/lib/libbluetooth_audio_session_qti_2_1.so
@@ -97,6 +100,7 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 -vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 -vendor/lib64/libbtnv.so
 -vendor/lib64/libsoc_helper.so
+-vendor/lib64/libsoc_helper_jni.so
 -vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 -vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
@@ -245,7 +249,7 @@ vendor/etc/camera/eyelineblush.cng
 -vendor/lib64/libarcsoft_portrait_lighting_c.so
 -vendor/lib64/libarcsoft_preview_deflicker.so
 -vendor/lib64/libarcsoft_supernight.so
--vendor/lib64/libmpbase.so
+-vendor/lib64/libmpbase.so;MODULE=libmpbase_vendor
 -vendor/lib64/libtriplecam_video_optical_zoom.so
 
 # Camera face detection
@@ -767,6 +771,7 @@ vendor/etc/init/vendor.qti.tftp.rc
 -vendor/lib64/libqcrilFramework.so
 -vendor/lib64/libqcrildatactl.so
 -vendor/lib64/libqdi.so
+-vendor/lib64/libqdp.so
 -vendor/lib64/libril-qc-logger.so
 -vendor/lib64/librilqmiservices.so
 -vendor/lib64/libsystem_health_mon.so
@@ -807,10 +812,6 @@ vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 vendor/radio/qcril_database/qcril.db
-
-# RIL - from surya V12.5.2.0 RJGEUXM
--vendor/lib64/libqdp.so|027a548996afea17c84904632fec570ccceca442
--vendor/lib64/libril-qc-hal-qmi.so|fb0647e357e100299c3bef7af2e488a1c6fbfbbc
 
 # Sensors
 -vendor/bin/sensors.qti
