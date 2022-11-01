@@ -205,7 +205,7 @@ TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/xiaomi:libudfps_extension.xiaomi
 TARGET_USES_FOD_ZPOS := true
 
 # Vendor security patch level
-VENDOR_SECURITY_PATCH := 2022-08-01
+VENDOR_SECURITY_PATCH := 2022-09-01
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
