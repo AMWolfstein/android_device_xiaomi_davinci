@@ -2,9 +2,6 @@
 vendor.bluetooth.soc=cherokee
 bluetooth.device.class_of_device=90,2,12
 
-# Camera
-vendor.camera.aux.packagelist=com.android.camera
-
 # Charger
 ro.charger.enable_suspend=true
 
