@@ -130,7 +130,7 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
 # Dexpreopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
+    SystemUIGoogle
 
 # Display
 PRODUCT_PACKAGES += \
