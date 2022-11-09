@@ -39,6 +39,10 @@ on early-init
     # Disable UFS clock scaling
     write /sys/bus/platform/devices/1d84000.ufshc/clkscale_enable 0
 
+    # Workarround for cache
+    rm /data/resource-cache
+    rm /data/system/package_cache 
+
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
 
