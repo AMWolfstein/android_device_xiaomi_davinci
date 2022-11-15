@@ -583,7 +583,4 @@
     <!-- Maximum number of supported users -->
     <bool name="config_enableMultiUserUI">true</bool>
     <integer name="config_multiuserMaximumUsers">5</integer>
-
-    <!-- the number of the max cached processes in the system. -->
-    <integer name="config_customizedMaxCachedProcesses">48</integer>
 </resources>
