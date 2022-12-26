@@ -49,3 +49,6 @@ ro.lmk.stall_limit_critical=40
 
 # Shutdown
 ro.build.shutdown_timeout=2
+
+# Project-Elixir Stuff
+org.elixir.device=Redmi K20
