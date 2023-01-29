@@ -380,6 +380,9 @@ on boot
     # Xiaomi Thermal Profiles permissions
     chown system system /sys/class/thermal/thermal_message/sconfig
 
+    # Default country code
+    setprop ro.boot.wificountrycode 00
+
     # Decrease the time before write-back-throttling
     write /sys/block/sda/queue/wbt_lat_usec 75000
 
