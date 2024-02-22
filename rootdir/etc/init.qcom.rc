@@ -494,6 +494,12 @@ on boot && property:persist.vendor.usb.controller.default=*
     chmod 0664 /sys/devices/virtual/touch/touch_dev/double_tap
     chown system system /sys/devices/virtual/touch/touch_dev/double_tap
 
+service vendor.ssr_setup /vendor/bin/ssr_setup
+    user root
+    group root
+    oneshot
+    disabled
+
 on property:ro.vendor.iocgrp.config=1
     mkdir /dev/blkio
     mount cgroup none /dev/blkio blkio
@@ -514,6 +520,9 @@ on property:persist.sys.modem_auth_timeout=*
 
 on property:persist.sys.pil_proxy_timeout=*
     write /sys/module/peripheral_loader/parameters/proxy_timeout_ms ${persist.sys.pil_proxy_timeout}
+
+on property:persist.vendor.ssr.restart_level=*
+    start vendor.ssr_setup
 
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
