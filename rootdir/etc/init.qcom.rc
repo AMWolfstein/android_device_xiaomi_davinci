@@ -565,6 +565,9 @@ on property:sys.boot_completed=1
     swapon_all
     write /proc/sys/vm/swappiness 100
 
+    # Disable statsd service to prevent additional battery drain
+    stop statsd
+
     # Setup runtime cpusets
     write /dev/cpuset/audio-app/cpus 1-5
     write /dev/cpuset/top-app/cpus 0-7
