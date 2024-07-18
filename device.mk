@@ -374,21 +374,10 @@ PRODUCT_PACKAGES += \
     fstab.ramdisk
 
 PRODUCT_PACKAGES += \
-    init.class_main.sh \
-    init.qcom.class_core.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.sh \
-    init.qcom.usb.sh \
-    init.qti.chg_policy.sh \
-    init.qti.dcvs.sh
-
-PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
-    init.target.rc \
     init.xiaomi.rc \
     ueventd.qcom.rc
 
