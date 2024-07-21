@@ -1,4 +1,4 @@
-# Common device tree for Xiaomi SM8150 devices
+# Device tree for Xiaomi Mi 9T Pro / Redmi K20 Pro
 
 ```
 #
