@@ -37,11 +37,7 @@ vendor.iop.enable_uxe=0
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # Netflix
-ro.netflix.bsp_rev=Q855-16947-1
-
-# Perf
-ro.vendor.qti.core_ctl_max_cpu=4
-ro.vendor.qti.core_ctl_min_cpu=2
+ro.netflix.bsp_rev=Q6150-17263-1
 
 # Netmgr
 persist.vendor.data.iwlan.enable=true

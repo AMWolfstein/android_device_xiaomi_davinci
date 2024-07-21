@@ -1,7 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE       := fstab.qcom_ramdisk
+LOCAL_MODULE       := fstab.ramdisk
 LOCAL_MODULE_STEM  := fstab.qcom
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC

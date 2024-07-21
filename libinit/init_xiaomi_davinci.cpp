@@ -9,51 +9,51 @@
 
 #include "vendor_init.h"
 
-#define FINGERPRINT "Xiaomi/raphael/raphael:11/RKQ1.200826.002/V12.5.2.0.RFKMIXM:user/release-keys"
+#define FINGERPRINT "Xiaomi/davinci/davinci:11/RKQ1.200826.002/V12.5.2.0.RFJCNXM:user/release-keys"
 
-static const variant_info_t raphael_global_info = {
+static const variant_info_t davinci_global_info = {
     .hwc_value = "GLOBAL",
     .sku_value = "",
 
     .brand = "Xiaomi",
-    .device = "raphael",
+    .device = "davinci",
     .marketname = "",
-    .model = "Mi 9T Pro",
+    .model = "Mi 9T",
     .build_fingerprint = FINGERPRINT,
 
     .nfc = true,
 };
 
-static const variant_info_t raphaelin_info = {
+static const variant_info_t davinciin_info = {
     .hwc_value = "INDIA",
     .sku_value = "",
 
     .brand = "Xiaomi",
-    .device = "raphaelin",
+    .device = "davinciin",
     .marketname = "",
-    .model = "Redmi K20 Pro",
+    .model = "Redmi K20",
     .build_fingerprint = FINGERPRINT,
 
     .nfc = false,
 };
 
-static const variant_info_t raphael_info = {
+static const variant_info_t davinci_info = {
     .hwc_value = "",
     .sku_value = "",
 
     .brand = "Xiaomi",
-    .device = "raphael",
+    .device = "davinci",
     .marketname = "",
-    .model = "Redmi K20 Pro",
+    .model = "Redmi K20",
     .build_fingerprint = FINGERPRINT,
 
     .nfc = true,
 };
 
 static const std::vector<variant_info_t> variants = {
-    raphael_global_info,
-    raphaelin_info,
-    raphael_info,
+    davinci_global_info,
+    davinciin_info,
+    davinci_info,
 };
 
 void vendor_load_properties() {
