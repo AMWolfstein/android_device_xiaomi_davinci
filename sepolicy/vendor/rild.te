@@ -1,2 +1,7 @@
 # Allow rild to set IMEI props
 set_prop(rild, vendor_deviceid_prop)
+get_prop(rild, vendor_deviceid_prop)
+
+# Allow rild to set Serial Number props
+set_prop(rild, vendor_sno_prop)
+get_prop(rild, vendor_sno_prop)
