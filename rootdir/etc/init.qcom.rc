@@ -43,6 +43,9 @@ on early-init
     rm /data/resource-cache
     rm /data/system/package_cache 
 
+    # Disable vblank IRQ immediately after turning off
+    write /sys/module/drm/parameters/vblankoffdelay -1
+
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
 
