@@ -1,0 +1,35 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "audio_effects.xml",
+    src: "audio_effects.xml",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "audio_io_policy.conf",
+    src: "audio_io_policy.conf",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "audio_platform_info.xml",
+    src: "audio_platform_info.xml",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "audio_policy_configuration.xml",
+    src: "audio_policy_configuration.xml",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "bluetooth_hearing_aid_audio_policy_configuration.xml",
+    src: "bluetooth_hearing_aid_audio_policy_configuration.xml",
+    vendor: true,
+}
