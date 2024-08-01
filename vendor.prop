@@ -268,6 +268,9 @@ ro.telephony.iwlan_operation_mode=default
 # Shutdown
 sys.vendor.shutdown.waittime=500
 
+# Thermal Mi_Thermald
+vendor.sys.thermal.data.path=/data/vendor/thermal/
+
 # USB
 ro.usb.uvc.enabled=true
 sys.usb.mtp.batchcancel=1

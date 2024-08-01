@@ -17,3 +17,6 @@ allow vendor_init block_device:lnk_file setattr;
 
 # Allow vendor_init to set IPA device node permissions
 allow vendor_init vendor_ipa_dev:file create_file_perms;
+
+# Allow vendor_init to set thermal prop
+set_prop(vendor_init, vendor_thermal_normal_prop)
